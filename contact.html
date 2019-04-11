@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BLIKSEM - Find events, programmes in Eindhoven</title>
+  <link rel="stylesheet" type="text/css" href="bliksem.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+<body>
+  <section id="upper">
+    <header><!--top menu bar-->
+
+      <ul class="topnav" id="topNav">
+        <li><a id="logo" href="index.html"><img src="images/logo.gif" alt="Bliksem Logo"></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="events.html">EVENT FINDER</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><input type="text" name="search" placeholder="Search.."></li>
+      </ul>
+    </header><!--end of top menu bar-->
+
+    <!--MAP-->
+      <div id="map" style="width:700px;height:280px;background:yellow"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--MAP ended-->  
+    <article>
+    
+      <h2 style="color:#b36b00; font-size:35px; font-weight:bold; opacity:0.9 ">Contact</h2>
+      <ul>
+        <li style="font-size:22px; color: #b3b3ff">Bliksem INC.</li>
+        <li style="font-size:22px; color: #b3b3ff">040 227 6927</li>
+        <li style="font-size:22px; color: #b3b3ff">info@bliksem.nl</li>
+        <li style="font-size:22px; color: #b3b3ff">Gravesandestraat 44, 5618 JD</li>
+      </ul>
+    </article>
+
+
+  <!--till here-->
+  <footer>
+    Copyright
+  </footer>
+</body>
+</html>

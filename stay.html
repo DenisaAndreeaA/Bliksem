@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BLIKSEM - Stay&Sleep</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="bliksem.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+<body>
+  <section id="upper">
+    <header><!--top menu bar-->
+
+      <ul class="topnav" id="topNav">
+        <li><a id="logo" href="index.html"><img src="images/logo.gif" alt="Bliksem Logo"></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="events.html">EVENT FINDER</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><input type="text" name="search" placeholder="Search.."></li>
+      </ul>
+    </header><!--end of top menu bar-->
+
+  <div>
+
+  <h2 style="color: #e6ac00; text-shadow: 0 0 20px #332600, 0 0 5px #ffdf80; font-size: 50px; text-align:center">Where will you stay?</h2>
+
+  <!--MAP-->
+      <div id="map" style="width:400px;height:400px;background:yellow; margin-left: 450px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--MAP ended-->
+<br>
+
+    
+        <p><a href="http://eindhoven.bookingbrabant.nl/eindhoven/en/accommodation/list" style="color:#e6e6e6; font-size:25px; text-decoration:none; margin-left: 590px">Bookings</a></p>
+        <p><a href="https://www.couchsurfing.com/users/sign_in" style="color:#e6e6e6; font-size:25px; text-decoration:none; margin-left: 570px;">Couchsurfing</a></p>
+        <p><a href="https://www.airbnb.nl/s/Eindhoven--Nederland" style="color:#e6e6e6; font-size:25px; text-decoration:none; margin-left: 600px;">Airbnb</a></p>
+
+  </div>
+
+</body>
+<footer>
+  Copyright
+</footer>
+</html>

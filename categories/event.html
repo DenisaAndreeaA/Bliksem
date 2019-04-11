@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BLIKSEM - Find events, programmes in Eindhoven</title>
+  <link rel="stylesheet" type="text/css" href="../bliksem.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+</head>
+
+<body>
+  <section id="upper">
+    <header><!--top menu bar-->
+
+      <ul class="topnav" id="topNav">
+        <li><a id="logo" href="index.html"><img src="../images/logo.gif" alt="Bliksem Logo"></a></li>
+        <li><a href="../about.html">ABOUT</a></li>
+        <li><a href="../events.html">EVENT FINDER</a></li>
+        <li><a href="../contact.html">CONTACT</a></li>
+        <li><input type="text" name="search" placeholder="Search.."></li>
+      </ul>
+    </header><!--end of top menu bar-->
+  </section>
+  <article>
+    <h1 style="font-size: 55px; color: #806000; opacity: 0.8">Event name</h1>
+    <img id="event-pic" src="../images/events_medium.jpg" alt="Picture of the event" style="width:420px;height:315px;border:0;">
+    <section>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies turpis hendrerit nunc semper faucibus.
+        Proin fermentum lacus vitae purus facilisis efficitur. In molestie neque ac elit placerat porttitor.
+        Aenean pulvinar consequat orci vel laoreet. Vestibulum placerat lobortis elementum. Cras justo elit,
+        feugiat sed eleifend eu, iaculis nec felis. Nulla lacus quam, mattis vitae velit a, sagittis tristique purus.
+
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam id lorem ultricies, suscipit ante eget, suscipit felis.
+        Praesent fringilla porta tortor quis eleifend. Ut in nulla id nunc mollis rutrum. Maecenas commodo auctor dui ac facilisis.
+        Quisque consectetur tortor id est vehicula vehicula. Nulla a ligula eget urna tincidunt mattis eget vel dui.
+
+        Morbi sodales ultricies facilisis. Donec dignissim nibh a lacus pharetra molestie. Sed varius nisl non interdum efficitur.
+        Donec aliquam bibendum tellus, id malesuada velit lacinia et. Vestibulum lacus elit, pulvinar vitae dolor ac, maximus
+        malesuada purus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis mi, sodales sed convallis non, ultricies eu nisi.</p>
+        <button class="button">GET TICKETS</a></button>
+    </section>
+  </article>
+    <h3 style="font-size:50px; opacity:0.9; color:#806000">Similar events</h3>
+  <article class="event"  style="margin-left:0px">
+    
+    <section>
+      <h1 id="square">Event date</h1>
+        <h2 class="title"><a href="event.html">Event title</a></h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit.</p>
+      <button class="button">More info...</button>
+    </section>
+    <section>
+      <h1 id="square">Event date</h1>
+      <h2 class="title"><a href="event.html">Event title</a></h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit.</p>
+      <button class="button">More info...</button>
+    </section>
+    <section>
+      <h1 id="square">Event date</h1>
+      <h2 class="title"><a href="event.html">Event title</a></h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit.</p>
+      <button class="button">More info...</button>
+    </section>
+  </article>
+
+  <aside>
+    <div>
+        <p><a href="#" style="color:#3333ff; font-size: 30px; text-decoration:none">Venue</a></p>
+<!--MAP-->
+      <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--MAP ended-->
+    </div>
+      <p style="color:#3333ff; font-size: 30px; text-decoration:none">Date, time</p>
+      <p><a href="#" style="color:#3333ff; font-size: 30px; text-decoration:none">Category</a></p>
+  </aside>
+  <!--till here-->
+  <footer>
+    Copyright
+  </footer>
+</body>
+</html>
